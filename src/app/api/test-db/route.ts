@@ -10,7 +10,7 @@ export async function GET() {
 
     // Try to connect
     let connectionStatus = 'not_attempted';
-    let errorMessage = null;
+    let errorMessage: string | null = null; // Explicitly type as string | null
     
     try {
       const client = await clientPromise;
@@ -42,4 +42,3 @@ export async function GET() {
     }, { status: 500 });
   }
 }
-
