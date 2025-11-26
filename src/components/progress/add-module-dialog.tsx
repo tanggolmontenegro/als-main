@@ -140,7 +140,7 @@ export function AddModuleDialog({
                 </SelectTrigger>
                 <SelectContent>
                   {modules.map((module) => (
-                    <SelectItem key={module._id || module.id} value={module._id || module.id}>
+                    <SelectItem key={module._id || module._id} value={module._id || module._id}>
                       {module.title}
                     </SelectItem>
                   ))}
